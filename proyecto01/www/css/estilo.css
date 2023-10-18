@@ -1,0 +1,45 @@
+/**
+Reseteo de propiedades a todo el html
+ */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    position: relative;
+    background: rgb(2,0,36);
+    background: linear-gradient(184deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 19%, rgba(0,212,255,1) 100%);
+}
+header{
+    position: relative;
+    float: left;
+    max-width: 100%;
+    color: white;
+}
+
+nav {
+    position: relative;
+    float: left;
+    max-width: 80%;
+    color: white;
+    background-color: black;
+
+}
+nav ul{
+    position: relative;
+    float: left;
+    display: inline-block;
+    list-style: none;
+}
+
+main {
+    position: relative;
+    float: left;
+    background-color: white;
+    margin: 0 auto;
+    max-width: 80%;
+}
