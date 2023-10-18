@@ -1,26 +1,30 @@
 /**
-Reseteo de propiedades a todo el html
+Reseteo de propiedades
  */
-
+/*********************************************/
 
 *{
     margin: 0;
     padding: 0;
     border: 0;
 }
-
+/*********************************************/
+/*BODY*/
 body{
     position: relative;
     background: rgb(2,0,36);
     background: linear-gradient(184deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 19%, rgba(0,212,255,1) 100%);
 }
+/*********************************************/
+/*header*/
 header{
     position: relative;
     float: left;
     max-width: 100%;
     color: white;
 }
-
+/*********************************************/
+/*nav*/
 nav {
     position: relative;
     float: left;
@@ -35,7 +39,8 @@ nav ul{
     display: inline-block;
     list-style: none;
 }
-
+/*********************************************/
+/*main*/
 main {
     position: relative;
     float: left;
@@ -43,3 +48,4 @@ main {
     margin: 0 auto;
     max-width: 80%;
 }
+/*********************************************/
