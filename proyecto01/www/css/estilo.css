@@ -12,7 +12,10 @@ Reseteo de propiedades
 /*BODY*/
 body{
     position: relative;
+    max-width: 100%;
+    width: 1000px;
     background: rgb(2,0,36);
+    margin: 0 auto;
     background: linear-gradient(184deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 19%, rgba(0,212,255,1) 100%);
 }
 /*********************************************/
@@ -22,23 +25,42 @@ header{
     float: left;
     max-width: 100%;
     color: white;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header img{
+    float: right;
 }
 /*********************************************/
 /*nav*/
 nav {
     position: relative;
     float: left;
-    max-width: 80%;
     color: white;
     background-color: black;
+    width: 100%;
+    margin: 0 auto;
+}
 
-}
-nav ul{
-    position: relative;
-    float: left;
+nav ul {
     display: inline-block;
-    list-style: none;
+    float: left;
+    width: 100%;
 }
+
+nav li {
+    float: left;
+    text-align: center;
+    list-style: none;
+    padding: 5px;
+}
+
+nav li:last-child{
+    float: right;
+}
+
+
 /*********************************************/
 /*main*/
 main {
@@ -47,5 +69,61 @@ main {
     background-color: white;
     margin: 0 auto;
     max-width: 80%;
+    /*padding-left: 10%;*/
+
+}
+
+#fotoinicio{
+    background-image: url(../images/bg-logo.jpg);
+    background-repeat: no-repeat;
+    height: 250px;
+    position: relative;
+    width: 762px;
+    float: left;
+
+}
+
+.cabecera h2{
+    position: absolute;
+    top: 10%;
+    width: 100%;
+
+}
+
+.artPrincipal{
+    max-width: 762px;
+    background-color: #88ADE8;
+    color: blue;
+    position: relative;
+    float: left;
+}
+
+.restoArticulos div{
+    max-width: 762px;
+}
+
+.restoArticulos:last-child img{
+    width: 15%;
+    position: relative;
+
+    display: block;
 }
 /*********************************************/
+
+aside{
+    position: relative;
+    float: right;
+    background-color: white;
+
+
+
+}
+
+/*********************************************/
+/*footer*/
+footer{
+    position: relative;
+    float: right;
+    background-color: mediumblue;
+    width: 100%;
+}
