@@ -13,7 +13,7 @@ Reseteo de propiedades
 body{
     position: relative;
     max-width: 100%;
-    width: 1000px;
+    width: 762px;
     background: rgb(2,0,36);
     margin: 0 auto;
     background: linear-gradient(184deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 19%, rgba(0,212,255,1) 100%);
@@ -63,22 +63,26 @@ nav li:last-child{
 
 /*********************************************/
 /*main*/
-main {
+.contenedorPrincipal{
+    background-color: white;
     position: relative;
     float: left;
-    background-color: white;
     margin: 0 auto;
-    max-width: 80%;
-    /*padding-left: 10%;*/
+    width: 762px;
+
+
 
 }
 
-#fotoinicio{
-    background-image: url(../images/bg-logo.jpg);
-    background-repeat: no-repeat;
-    height: 250px;
+main {
     position: relative;
-    width: 762px;
+    float: left;
+    max-width: 500px;
+
+}
+
+.cabecera img{
+    position: relative;
     float: left;
 
 }
@@ -91,22 +95,35 @@ main {
 }
 
 .artPrincipal{
-    max-width: 762px;
-    background-color: #88ADE8;
     color: blue;
     position: relative;
     float: left;
+    width: 500px;
 }
+
+.artPrincipal p {
+    background-color: #88ADE8;
+
+}
+
+
 
 .restoArticulos div{
-    max-width: 762px;
+    position: relative;
+    float: left;
+    width: 200px;
+
+
 }
 
-.restoArticulos:last-child img{
-    width: 15%;
+
+
+.conjuntoImagenes .imagen{
+    width: 100px;
+    margin: 5px;
     position: relative;
 
-    display: block;
+
 }
 /*********************************************/
 
@@ -114,9 +131,12 @@ aside{
     position: relative;
     float: right;
     background-color: white;
+    width: 200px;
 
+}
 
-
+aside section ul{
+    list-style: none;
 }
 
 /*********************************************/
