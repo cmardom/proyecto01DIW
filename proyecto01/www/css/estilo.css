@@ -7,6 +7,7 @@ Reseteo de propiedades
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
 }
 /*********************************************/
 /*BODY*/
@@ -14,24 +15,48 @@ body{
     position: relative;
     max-width: 100%;
     width: 762px;
-    background: rgb(2,0,36);
     margin: 0 auto;
-    background: linear-gradient(184deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 19%, rgba(0,212,255,1) 100%);
+    padding-top: 5%;
+    background: rgb(0,46,158);
+    background: linear-gradient(90deg, rgba(0,46,158,1) 0%, rgba(76,131,184,1) 55%, rgba(135,186,244,1) 100%);
+    font-family: Calibri, sans-serif;
 }
 /*********************************************/
 /*header*/
 header{
     position: relative;
     float: left;
-    max-width: 100%;
     color: white;
-    width: 100%;
     margin: 0 auto;
 }
 
-header img{
-    float: right;
+header h1{
+    display: inline-block;
+    padding-left: 3%;
 }
+
+.busqueda + p{
+    padding-left: 3%;
+    padding-bottom: 2%;
+
+
+}
+
+header .busqueda{
+    position: relative;
+    float: right;
+    padding-top:20px;
+    padding-right: 2%;
+
+
+}
+
+.busqueda p{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+
 /*********************************************/
 /*nav*/
 nav {
@@ -39,8 +64,10 @@ nav {
     float: left;
     color: white;
     background-color: black;
-    width: 100%;
+    width: 900px;
     margin: 0 auto;
+    height: 60px;
+
 }
 
 nav ul {
@@ -50,16 +77,34 @@ nav ul {
 }
 
 nav li {
+    font-weight: bold;
     float: left;
-    text-align: center;
     list-style: none;
-    padding: 5px;
+    padding: 20px 40px;
 }
 
 nav li:last-child{
     float: right;
 }
 
+nav li:hover{
+    background-color: #112231;
+}
+.cabecera img{
+    position: relative;
+    width: 900px;
+    float: left;
+
+}
+
+.cabecera h2{
+    position: absolute;
+    top: 55%;
+    left: 10%;
+    width: 100%;
+    color: black;
+
+}
 
 /*********************************************/
 /*main*/
@@ -68,7 +113,7 @@ nav li:last-child{
     position: relative;
     float: left;
     margin: 0 auto;
-    width: 762px;
+    width: 900px;
 
 
 
@@ -79,49 +124,69 @@ main {
     float: left;
     max-width: 500px;
 
-}
-
-.cabecera img{
-    position: relative;
-    float: left;
 
 }
 
-.cabecera h2{
-    position: absolute;
-    top: 10%;
-    width: 100%;
 
-}
 
 .artPrincipal{
-    color: blue;
+    color: #656a82;
     position: relative;
-    float: left;
-    width: 500px;
+    width: 600px;
+}
+
+.artPrincipal h2{
+    padding-left: 3%;
+}
+.artPrincipal time{
+    padding-left: 3%;
+
+}
+.artPrincipal a{
+    color: #76b044;
+    text-decoration: underline;
+    display: inline-block;
 }
 
 .artPrincipal p {
-    background-color: #88ADE8;
+    background-color: #e9fafb;
+    color: #3172b9;
+    padding: 7% 3%;
+
 
 }
 
-
-
-.restoArticulos div{
+.primeraColumnaArticulos{
     position: relative;
-    float: left;
-    width: 200px;
+    float: left; /*no quitar*/
+    MAX-width: 300px;
+    max-height: 600px; /*altura deseada del contenedor*/
+
 
 
 }
 
+.primeraColumnaArticulos div{
+    position: relative;
+    margin: 5px;
+    width: 250px;
 
 
-.conjuntoImagenes .imagen{
+
+
+}
+
+#conjuntoImagenes{
+    /*position: relative;*/
+    /*float: right;*/
+
+}
+
+.imagen{
+    position:relative;
     width: 100px;
     margin: 5px;
-    position:  relative;
+
 
 
 }
@@ -131,7 +196,7 @@ aside{
     position: relative;
     float: right;
     background-color: white;
-    width: 200px;
+    width: 280px;
 
 }
 
@@ -143,7 +208,22 @@ aside section ul{
 /*footer*/
 footer{
     position: relative;
-    float: right;
-    background-color: mediumblue;
-    width: 100%;
+    float: left;
+    background-color: #112231;
+    width: 900px;
+    margin: 0 auto;
+    height: 60px;
+
 }
+footer p{
+    display: inline-block;
+    position: relative;
+    color: #42626a;
+    padding: 20px 15px;
+}
+
+
+footer p:last-child{
+    float: right;
+}
+
